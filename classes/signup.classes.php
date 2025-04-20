@@ -10,7 +10,7 @@ class Signup extends Dbh
     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
     //If User's id and email is not in DB we are directing user to stmtfailed url
-    if(!$stmt->execute(array($username, $password, $email))){
+    if(!$stmt->execute(array($username, $hashedPwd, $email))){
       $stmt = null;
       header("location: ../index.php?error=stmtfailed");
       exit();

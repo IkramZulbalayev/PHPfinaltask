@@ -7,17 +7,6 @@
 </head>
 <body>
   
-  <header>
-    <nav>
-      <div>
-        <h3>Ikram Zulbalayev</h3>
-        <ul class="menu-main">
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="#">ABOUT ME</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
     <section class="index-login">
       <div class="wrapper">
         <div class="index-signup">
