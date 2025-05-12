@@ -8,6 +8,8 @@ class SignupContr extends Signup
   private $password;
   private $passwordrep;
 
+  
+  //Constructor to get data
   public function __construct($username, $email, $password, $passwordrep)
   {
     $this->username = $username;
