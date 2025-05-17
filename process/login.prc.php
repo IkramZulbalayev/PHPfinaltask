@@ -15,5 +15,5 @@ if(isset($_POST["submit"]))
   $login->loginUser();
 
   //Sending User back to front page
-  header("location: ../index.php?error=none");
+  header("Location: ../index.php?login=success");
 }

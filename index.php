@@ -7,6 +7,24 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+    <?php
+      if (isset($_GET['login'])) {
+          if ($_GET['login'] === 'success') {
+              echo "<p style='color: green;'>Login successful! Welcome back.</p>";
+          } elseif ($_GET['login'] === 'failed') {
+              echo "<p style='color: red;'>Login failed. Please check your credentials.</p>";
+          }
+      }
+
+      if (isset($_GET['signup'])) {
+          if ($_GET['signup'] === 'success') {
+              echo "<p style='color: green;'>Signup successful! You can now log in.</p>";
+          } elseif ($_GET['signup'] === 'failed') {
+              echo "<p style='color: red;'>Signup failed. Please try again.</p>";
+          }
+      }
+      ?>
+
   
     <section class="index-login">
       <div class="wrapper">
@@ -33,7 +51,7 @@
             <h4>Login</h4>
             <p>Login Here!</p>
           </div>
-        
+
         <form action="process/login.prc.php" method="post">
           <div class="form-group">
           <input type="text" name="username" placeholder="Username">
@@ -43,7 +61,7 @@
           <button type="submit" name="submit" class="btn-submit">Login</button>
         </form>
       </div>
-      
+
      </div>
     </section>
 </body>
