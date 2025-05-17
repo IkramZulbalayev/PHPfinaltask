@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Sign-Up and Login Sections */
+.index-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.index-signup, .index-login {
+  flex: 1;
+  padding: 20px;
+  color: darkgreen;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+.signup-text h4, .index-login h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.signup-text p, .index-login p {
+  margin: 5px 0 12px 0;
+  color: #555;
+}
+
+/* Form Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #8fbc8f;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #32cd32;
+  outline: none;
+}
+
+/* Button Styling */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background-color: #228b22;
+}

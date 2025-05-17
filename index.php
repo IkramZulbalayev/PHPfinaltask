@@ -4,31 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   
     <section class="index-login">
       <div class="wrapper">
+
         <div class="index-signup">
-          <h4>Sign-up</h4>
-          <p>Sign up Here!</p>
+          <div class="signup-text">
+            <h4>Sign-up</h4>
+            <p class="p">Sign up here!</p>
+          </div>
+          <div class="form-group">
           <form action="process/signup.prc.php" method="post">
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password">
             <input type="password" name="passwordrep" placeholder="Repeat Password">
             <input type="text" name="email" placeholder="E-mail">
+          </div>       
             <br>
-            <button type="submit" name="submit">Sign-Up</button>
+            <button type="submit" name="submit" class="btn-submit">Sign-Up</button>
           </form>
+          
         </div>
         <div class="index-login">
-        <h4>Login</h4>
-        <p>Login Here!</p>
+          <div class="login-text">
+            <h4>Login</h4>
+            <p>Login Here!</p>
+          </div>
+        
         <form action="process/login.prc.php" method="post">
+          <div class="form-group">
           <input type="text" name="username" placeholder="Username">
           <input type="password" name="password" placeholder="Password">
+          </div>
           <br>
-          <button type="submit" name="submit">Login</button>
+          <button type="submit" name="submit" class="btn-submit">Login</button>
         </form>
       </div>
       

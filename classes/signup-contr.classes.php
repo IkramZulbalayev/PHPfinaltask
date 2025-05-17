@@ -98,5 +98,4 @@ private function userExists()
   }
   return $result;
 }
-
 }
