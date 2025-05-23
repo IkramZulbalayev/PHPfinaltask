@@ -2,7 +2,6 @@
 
 class LoginContr extends Login
 {
-
   private $username;
   private $password;
 
@@ -10,18 +9,16 @@ class LoginContr extends Login
   {
     $this->username = $username;
     $this->password = $password;
-
   }
 
   public function loginUser()
   {
     if($this->emptyInput() == false){
-      //This sends User to emptyinput url if input is empty
-      header("location: ../index.php?error=emptyinput");
+      header("location: ../index.php?error=emptyinput"); // Redirect if inputs are empty
       exit();
     }
     
-    $this->getUser($this->username, $this->password);
+    $this->getUser($this->username, $this->password); // Attempt login
   }
 
   private function emptyInput()
@@ -31,6 +28,6 @@ class LoginContr extends Login
     {
       $result = false;
     }
-    return $result;
+    return $result; // Check if inputs are not empty
   }
 }

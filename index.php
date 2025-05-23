@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+    // Showing login success or failure messages
       if (isset($_GET['login'])) {
           if ($_GET['login'] === 'success') {
               echo "<p style='color: green;'>Login successful! Welcome back.</p>";
@@ -15,7 +16,7 @@
               echo "<p style='color: red;'>Login failed. Please check your credentials.</p>";
           }
       }
-
+      // Showing signup success or failure messages
       if (isset($_GET['signup'])) {
           if ($_GET['signup'] === 'success') {
               echo "<p style='color: green;'>Signup successful! You can now log in.</p>";
